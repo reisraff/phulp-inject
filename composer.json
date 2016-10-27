@@ -1,0 +1,21 @@
+{
+    "name": "reisraff/phulp-inject",
+    "description": "The inject addon for phulp",
+    "keywords": ["phulpplugin", "phulp", "php", "inject"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Rafael Reis",
+            "email": "reisraff@gmail.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4" : {
+            "Phulp\\Inject\\" : "src"
+        }
+    },
+    "require": {
+        "reisraff/phulp": "~1.7"
+    }
+}
