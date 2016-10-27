@@ -28,7 +28,7 @@ $phulp->task('inject', function ($phulp) {
                     'tagname' => 'inject',
                     // 'starttag' => null,
                     // 'endtag' => null,
-                    'filterFilename' => function ($filename) {
+                    'filter_filename' => function ($filename) {
                         return 'path/' . $filename;
                     },
                 ]

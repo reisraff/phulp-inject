@@ -21,7 +21,7 @@ class Inject implements PipeInterface
         'tagname' => 'inject',
         'starttag' => null,
         'endtag' => null,
-        'filterFilename' => null,
+        'filter_filename' => null,
     ];
 
     /**
@@ -277,7 +277,7 @@ class Inject implements PipeInterface
 
         $filename = $file->getDistpathname();
 
-        $filter = $this->options['filterFilename'];
+        $filter = $this->options['filter_filename'];
         if (is_callable($filter)) {
             $filename = $filter($filename);
         }
