@@ -89,13 +89,16 @@ Set in the constructor.
 
 use Phulp\Inject\Inject;
 
-$cssMinifier = new Inject([
+$cssMinifier = new Inject(
+  $distFiles,
+  [
     'tagname' => 'replace-inject',
     'starttag' => '<-- replace-inject -->',
     'endtag' => '<-- endreplace-inject -->,
     'filterFilename' => function ($filename) {
       return 'path/' . $filename;
     },
-]);
+  ]
+);
 
 ```
